@@ -1,0 +1,319 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------- HEADER --------------*/
+
+.top{
+    background-image: url(images/baggrund.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    padding-bottom: 10%;
+}
+
+header{
+    width: 100%;
+    display: flex;
+}
+
+header div{
+    width: 34%;
+}
+
+/* Burgermenu */
+.fa-solid{
+    color: #3852c4;
+    font-size: 3.5vw;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-weight: 100;
+}
+
+header #logo{
+    justify-content: center; 
+    align-items: center;
+}
+
+header #logo img{
+    max-width: 40%;
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-------------- Section med Medova-te kassen --------------*/
+
+#kassen{
+    width: 100%;
+}
+
+#kassen img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3%;
+    max-width: 60%;
+    max-height: auto;
+}
+
+/*-------------- Section omkring det nye design --------------*/
+
+#nyt-look{
+    display: flex;
+    background-color: #c2ab6e;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+#nyt-look h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: athelas,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4.5vw;
+    color: white;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#overskrift{
+    width: 100% !important;
+}
+
+#nyt-look div{
+    width: 50%;
+    text-align: center;
+}
+
+#nyt-look #citat p{
+    text-align: center;
+    color: white;
+    font-family: charter, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2vw;
+    margin-left: 22%;
+    margin-top: 20%;
+    margin-bottom: 0;
+}
+
+#citat{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 30% !important;
+}
+
+#citat img{
+    position: absolute;
+    top: 0;
+    max-width: 40%;
+    margin-left: 20%;
+    margin-top: 4%;
+}
+
+#nyt-look div p{
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1.8vw;
+    margin-top: 0px;
+}
+
+#nyt-look div a{
+    display: inline-block;
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8vw;
+    text-decoration: none;
+    color: white;
+    background-color: #af9243;
+    padding: 3% 9%;
+    border-radius: 50px;
+    margin-top: 3%;
+    margin-bottom: 7%;
+    white-space: nowrap;
+}
+
+/*-------------- Section med 2 cards --------------*/
+
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin-top: 5%;
+    padding: 0;
+}
+
+.cards div{
+    width: 46%;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards div .overlay{
+    position: relative;
+    background-color: white;
+    border: solid 2px black;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 60px; 
+    width: 46%;
+}
+
+.cards div img{
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 4px #c2ab6e;
+}
+
+.cards h4{
+    
+}
+
+/*-------------- Section med konkurrence --------------*/
+
+.konkurrence{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+} 
+
+.konkurrence #video{
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 50%;
+}
+
+.konkurrence #video video{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+}
+
+.konkurrence #video-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.konkurrence h1{
+    text-align: center;
+    font-family: athelas,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vw;
+    color: white;
+    padding-top: 7%;
+    padding-bottom: 3%;
+    margin: 0;
+}
+
+.konkurrence p{
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 2.2vw;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: 0;
+}
+
+.konkurrence a{
+    display: inline-block;
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.3vw;
+    text-decoration: none;
+    color: white;
+    background-color: #af9243;
+    padding: 1.8% 4%;
+    border-radius: 50px;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    white-space: nowrap;
+}
+
+
+
+/*-------------- FOOTER --------------*/
+
+footer {
+    background-color: #c2ab6e;
+    color: white;
+    padding: 20px 0;
+    margin-top: -4px;
+}
+
+footer p {
+    font-family: charter, serif;
+    font-size: 12px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    font-family: charter, serif;
+}
+
+.footer-column {
+    flex: 0 0 25%;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column a:hover{
+    color: #3852c4;
+}
+
+.copyright {
+    text-align: center;
+}
+  
+
+
