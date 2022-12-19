@@ -31,7 +31,7 @@ header div{
 
 /* Burgermenu */
 .fa-solid{
-    color: #3852c4;
+    color: #3048b6;
     font-size: 3.5vw;
     margin-left: 5%;
     margin-top: 5%;
@@ -62,7 +62,7 @@ header #logo img{
     margin-left: auto;
     margin-top: 3%;
     max-width: 60%;
-    max-height: auto;
+    height: auto;
 }
 
 /*-------------- Section omkring det nye design --------------*/
@@ -198,7 +198,7 @@ header #logo img{
     font-weight: 700;
     font-style: normal;
     font-size: 1.3vw;
-    color: #3852c4;
+    color: #3048b6;
     margin: 10px 0 0 0;
 }
 
@@ -221,7 +221,7 @@ header #logo img{
 }
 
 .cards a:hover{
-    color: #3852c4;
+    color: #3048b6;
     text-decoration: underline;
 }
 
@@ -307,7 +307,7 @@ footer {
     background-color: #c2ab6e;
     color: white;
     padding: 20px 0;
-    margin-top: -4px;
+    margin-top: -5px;
 }
 
 footer p {
@@ -348,7 +348,7 @@ footer p {
 }
 
 .footer-column a:hover{
-    color: #3852c4;
+    color: #3048b6;
 }
 
 .copyright {
@@ -389,7 +389,7 @@ footer p {
     }
 
     .mobilheader .fa-solid{
-        color: #3852c4;
+        color: #3048b6;
         font-size: 5vw;
         margin-right: 6%;
         margin-top: 6%;
@@ -497,3 +497,70 @@ footer p {
 
 }
 
+/*----------- BURGER MENU IKON + MENU -----------*/
+nav ul {
+    display: none;
+  }
+
+  nav-mobil ul {
+    display: none;
+  }
+
+.menu1 {
+  background-color: #c2ab6ebd;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 15%;
+  height: auto;
+  padding-left: 2%;
+  z-index: 0;
+  margin-top: -4.1%;
+  position: absolute;
+}
+
+.menu1-mobil {
+    background-color: #c2ab6ebd;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 50%;
+    height: auto;
+    padding-left: 2%;
+    z-index: 0;
+    margin-top: -4.1%;
+    position: absolute;
+  }
+
+.menu-link a {
+    font-size: 1.8vw;
+    color: #fff;
+    text-decoration: none;
+    font-family: charter, serif;
+}
+
+
+.menu-link a:hover {
+    color: #3048b6
+}
+
+#menu-button {
+    z-index: 1;
+    position: relative;
+}
+
+#menu-button-mobil {
+    z-index: 1;
+    position: absolute;
+}
+
+.menu-link {
+    padding-bottom: 21%;
+}
+
+li {
+    list-style-type: none;
+  }
+
+.menu-indhold {
+    margin-top: 40%;
+    width: 100%;
+}
