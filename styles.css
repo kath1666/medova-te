@@ -5,6 +5,13 @@ body{
 
 /*-------------- HEADER --------------*/
 
+/*LAPTOP RESPONSIVE*/
+@media screen and (min-width: 651px){
+    .mobilheader{
+        display: none;
+    }
+}
+
 .top{
     background-image: url(images/baggrund.jpg);
     background-repeat: no-repeat;
@@ -28,7 +35,6 @@ header div{
     font-size: 3.5vw;
     margin-left: 5%;
     margin-top: 5%;
-    font-weight: 100;
 }
 
 header #logo{
@@ -152,7 +158,7 @@ header #logo img{
     justify-content: center;
     background-color: white;
     margin-top: 5%;
-    padding: 0;
+    margin-bottom: -1.5%;
 }
 
 .cards div{
@@ -164,13 +170,14 @@ header #logo img{
 .cards div .overlay{
     position: relative;
     background-color: white;
-    border: solid 2px black;
+    border: solid 4px #c2ab6e;
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    bottom: 60px; 
-    width: 46%;
+    bottom: 13%; 
+    width: 65%;
+    padding-bottom: 10px;
 }
 
 .cards div img{
@@ -181,8 +188,41 @@ header #logo img{
     border: solid 4px #c2ab6e;
 }
 
+.cards hr{
+    width: 10%;
+    border: solid 0.5px black;
+}
+
 .cards h4{
-    
+    font-family: athelas, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.3vw;
+    color: #3852c4;
+    margin: 10px 0 0 0;
+}
+
+.cards p{
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.8vw;
+    margin: 4% 8%;
+}
+
+.cards a{
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: black;
+    font-family: charter, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+.cards a:hover{
+    color: #3852c4;
+    text-decoration: underline;
 }
 
 /*-------------- Section med konkurrence --------------*/
@@ -209,7 +249,7 @@ header #logo img{
     max-height: 100%;
     margin: 0;
     padding: 0;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .konkurrence #video-text{
@@ -238,8 +278,8 @@ header #logo img{
     font-style: normal;
     font-weight: 100;
     font-size: 2.2vw;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 18%;
+    padding-right: 18%;
     margin: 0;
 }
 
@@ -261,7 +301,7 @@ header #logo img{
 
 
 
-/*-------------- FOOTER --------------*/
+/*------------------- FOOTER --------------------*/
 
 footer {
     background-color: #c2ab6e;
@@ -314,6 +354,139 @@ footer p {
 .copyright {
     text-align: center;
 }
-  
 
+
+/*-------------- MOBIL RESPONSIVT --------------*/
+
+@media only screen and (max-width: 651px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+/*----------- HEADER -----------*/
+
+    header{
+        display: none;
+    }
+
+    .top{
+        padding-bottom: 4%;
+    }
+
+    .mobilheader{
+        display: flex;
+    }
+
+    .mobilheader div{
+        width: 50%;
+    }
+
+    .mobilheader div a img{
+        max-width: 26%;
+        margin-left: 2%;
+    }
+
+    .mobilheader .fa-solid{
+        color: #3852c4;
+        font-size: 5vw;
+        margin-right: 6%;
+        margin-top: 6%;
+        text-align: end;
+        display: block;
+    }
+
+    #kassen img{
+        max-width: 80%;
+        margin-top: -5%;
+    }
+
+/*----------- NYT LOOK -----------*/
+
+    #nyt-look{
+        flex-direction: column;
+    }
+
+    #nyt-look div{
+        width: 100% !important;
+    }
+
+    #nyt-look #citat img{
+        margin: 0;
+        max-width: 25%;
+    }
+
+    #nyt-look h1{
+        font-size: 7.2vw;
+    }
+
+    #nyt-look #citat p{
+        font-size: 4vw;
+        margin: 23% 0 6% 0;
+    }
+
+    #nyt-look div p{
+        font-size: 3.8vw;
+        margin: 0;
+    }
+
+    #nyt-look div a{
+        font-size: 3.8vw;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+/*----------- 2 CARDS -----------*/
+
+    .cards{
+        flex-direction: column;
+        margin-top: 7%;
+    }
+
+    .cards div{
+        width: 100%;
+    }
+
+    .cards div .overlay{
+        margin-top: -16%;
+        margin-bottom: 8%;
+    }
+
+    .cards h4{
+        font-size: 3vw;
+    }
+
+    .cards hr{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+    }
+
+    .cards p{
+        font-size: 4vw;
+    }
+
+    .cards a{
+        font-size: 2.1vw;
+    }
+
+/*----------- SECTION MED KONKURRENCE -----------*/
+
+    .konkurrence h1{
+        font-size: ;
+    }
+
+
+/*----------- FOOTER -----------*/
+
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .footer-column{
+        margin-bottom: 5%;
+    }
+}
 
