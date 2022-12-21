@@ -162,7 +162,13 @@
 
         <section class="konkurrence">
             <div id="video">
-            <video src="indien.mp4" autoplay="playsinline" loop muted></video>
+            <video src="indien.mp4" autoplay loop muted></video>
+
+            <script>
+                var video = document.getElementByTagName("video");
+                video.autoplay = true;
+            </script>
+
                 <div id="video-text">
                     <h1>VIND EN REJSE TIL <br> INDIEN</h1>
                     <p>Vil du opleve de smukke teplantager i Indien og lære alt om te-produktionen fra bunden? <br> 
