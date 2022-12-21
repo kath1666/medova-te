@@ -1,15 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="artiklerstyles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mrn5blp.css">
+    <script src="https://kit.fontawesome.com/ebc2f851ed.js" crossorigin="anonymous"></script> 
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
     <title>Te-hacks</title>
 </head>
 
 <body>
 
-Dette skulle have været en underside med artikler, opskrifter osv.     
+
+    <!------------------ HEADER ------------------->
+
+
+    <!------------------ Desktop header ------------------->
+    <!-- Her er en burger-menu-knap, et logo og en udvidet menu, der som standard er skjult med display: none -->
+    <header>
+        <div class="menu-top">
+            <div id="menu-button"><i class="fa-solid fa-bars"></i></div>
+            <nav>
+                <ul class="menu1">
+                    <div class="menu-indhold">
+                        <li class="menu-link"><a href="ommedova.html">Om Medova</a></li>
+                        <li class="menu-link"><a href="tehacks.html">Te-hacks</a></li>
+                        <li class="menu-link"><a href="konkurrence.html">Konkurrence</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+        <!-- Der er tilføjet alt-tag på logoet i forhold til SEO. Det er gjort på alle billeder på siden -->
+        <div id="logo"> <a href="index.html"><img src="images/logo.png" alt="Medova logo"></a> </div>
+    </header>   
     
+    <!-- Her er et javascript, der reagerer, når der klikkes på burger-menuen. 
+        Den ændrer den udvidede menu mellem display: none og block. Altså åbner og lukker menuen. 
+        Samtidigt ændrer den ikonet, der bruges som knap til menuen -->
+    <script>
+     document.getElementById('menu-button').addEventListener('click', function() {
+        var menu = document.querySelector('nav ul');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+            this.firstElementChild.classList.remove('fa-xmark');
+            this.firstElementChild.classList.add('fa-bars');
+        } else {
+            menu.style.display = 'block';
+            this.firstElementChild.classList.remove('fa-bars');
+            this.firstElementChild.classList.add('fa-xmark');
+        }
+        });
+    </script>
+
+    <!------------------ Mobil header ------------------->
+    <!-- Her er en burger-menu-knap, et logo og en udvidet menu, der som standard er skjult med display: none -->
+    <section class="mobilheader">
+        <div> <a href="index.html"><img src="images/logo.png" alt="Medova logo"></a> </div>
+        <div class="menu-top-mobil">
+            <div id="menu-button-mobil"><i class="fa-solid fa-bars"></i></div>
+            <nav-mobil>
+                <ul class="menu1-mobil">
+                    <div class="menu-indhold">
+                        <li class="menu-link"><a href="ommedova.html">Om Medova</a></li>
+                        <li class="menu-link"><a href="tehacks.html">Te-hacks</a></li>
+                        <li class="menu-link"><a href="konkurrence.html">Konkurrence</a></li>
+                    </div>
+                </ul>
+            </nav-mobil>
+        </div>
+    </section>
+
+    <!-- Her er et javascript, der reagerer, når der klikkes på burger-menuen. 
+        Den ændrer den udvidede menu mellem display: none og block. Altså åbner og lukker menuen. 
+        Samtidigt ændrer den ikonet, der bruges som knap til menuen -->
+    <script>
+        document.getElementById('menu-button-mobil').addEventListener('click', function() {
+           var menu = document.querySelector('nav-mobil ul');
+           if (menu.style.display === 'block') {
+               menu.style.display = 'none';
+               this.firstElementChild.classList.remove('fa-xmark');
+               this.firstElementChild.classList.add('fa-bars');
+           } else {
+               menu.style.display = 'block';
+               this.firstElementChild.classList.remove('fa-bars');
+               this.firstElementChild.classList.add('fa-xmark');
+           }
+           });
+    </script>
+
+
+    <main>
+
+        <section class="hackstitel">
+            <h1>TE-HACKS</h1>
+            <hr>
+            <p>Te er faktisk ret fantastisk på mange måder. Det er sundt og lækkert at drikke, men man kan også bruge det til andet end at drikke, både teen og tebrevene. 
+                For eksempel kan man lave forskellige drinks, pudse spejle eller få planter til at gro. 
+                Vi har samlet en masse forskellige te-hacks her på siden, som du alle kan prøve af derhjemme.
+            </p>
+        </section>
+
+        <section class="container">
+            <div>
+              <div class="left">
+                <a href="artikel.html"><img src="images/teposer.jpg" alt="Te-hacks - Lær hvordan du bl.a. genbruger teposer"></a>
+              </div>
+              <div class="right">
+                <h2>Genbrug dine teposer til planter</h2>
+                <hr>
+                <p>En tepose lever i ca. 2-3 minutter, hvorefter den ender sit liv i skraldespanden.
+                    I stedet for at smide teposen direkte ud så genbrug den til planter! 
+                    Klik nedenfor for at se 6 måder du kan genbruge dine teposer på. 
+                </p>
+                <a href="artikel.html">SE VIDEOEN HER</a>
+              </div>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <div>
+              <div class="left">
+                <a href="isteopskrift.html"><img src="images/iste.jpg" alt="Opskrift på iste med Medova te"></a>
+              </div>
+              <div class="right">
+                <h2>Hjemmelavet iste med fersken</h2>
+                <hr>
+                <p>Der er nu ikke noget som et dejligt koldt glas iste. Så hvorfor ikke prøve at lave din egen?
+                    Det er super simpelt! Du skal kun bruge 4 ingredienser. Bare klik på knappen nedenunder for at komme i gang.
+                </p>
+                <a href="isteopskrift.html">LAV ISTE</a>
+              </div>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <div>
+              <div class="left">
+                <a href="drinkopskrift.html"><img src="images/londonfog1.jpg" alt="iste"></a>
+              </div>
+              <div class="right">
+                <h2>Lav en lækker drink med din Medova te</h2>
+                <hr>
+                <p>Synes du også en kop helt plain te kan blive lidt for kedelig? Kunne du have lyst til at spice den lidt op?
+                    Så skal du prøve en London Fog. Denne søde drink er en te-latte og indeholder kun 4 ingredienser. </p>
+                <a href="drinkopskrift.html">LÆS OPSKRIFTEN</a>
+              </div>
+            </div>
+        </section>
+
+
+    </main>
+    
+
+    <!------------------ FOOTER ------------------->
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>Medova</h3>
+            <ul>
+              <li><a href="ommedova.html">Om Medova</a></li>
+              <li><a href="tehacks.html">Te hacks</a></li>
+              <li><a href="konkurrence.html">Konkurrence</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Find hjælp</h3>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Kundeservice</a></li>
+              <li><a href="https://www.findsmiley.dk/Sider/Forside.aspx">Fødevarestyrelsen</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Nyttige links</h3>
+            <ul>
+              <li><a href="#">Cookiepolitik</a></li>
+              <li><a href="#">Privatlivspolitik</a></li>
+              <li><a href="#">Konkurrencebetingelser</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Følg os</h3>
+            <ul>
+              <li><a href="https://www.facebook.com/unilever"> <img src="images/fbpx45.png" alt="Medova på Facebook"> </a> <a href="https://www.instagram.com/unilever/"> <img src="images/insta45.png" alt="Medova på Instagram"> </a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright &copy; 2022 Unilever A/S</p>
+        </div>
+    </footer>
+
+
+
 </body>
 </html>
